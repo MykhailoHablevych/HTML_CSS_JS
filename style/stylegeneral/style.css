@@ -1,0 +1,122 @@
+/* Стилі для заголовка і шапки сторінки */
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Стилі для основного вмісту сторінки */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Стилі для центрування "Популярних товарів" та "Нових надходжень" */
+#popular-products,
+#new-arrivals {
+    text-align: center;
+}
+
+/* Стилі для товарів у каталозі */
+.product-container {
+    display: inline-block;
+    margin: 10px;
+    text-align: left;
+}
+
+/* Змінений стиль для навігаційних посилань у каталозі */
+nav a:hover {
+    color: yellow;
+}
+
+.product {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    width: 200px;
+    float: left;
+    margin: 10px;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.product-details {
+    display: none;
+    text-align: left;
+    margin-top: 10px;
+}
+
+/* Клас активного товару */
+.product.active {
+    border: 1px solid #f44336;
+}
+
+/* Клас активної інформації про товар */
+.product.active .product-details {
+    display: block;
+}
+
+.cart {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    width: 300px;
+}
+
+.cart h2 {
+    margin-top: 0;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.cart-item button {
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Стилі для підвалу сторінки */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-top: 1px solid #ddd;
+    clear: both;
+}
